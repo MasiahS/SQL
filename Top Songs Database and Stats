@@ -1,0 +1,18 @@
+CREATE TABLE top_songs( id INTEGER PRIMARY KEY, name TEXT, artist TEXT, year INTEGER, genre TEXT);
+INSERT INTO top_songs VALUES(1, "Martin&Gina","PoloG", 2020, "Rap");
+INSERT INTO top_songs VALUES(2, "Portland", "Drake", 2017, "Rap");
+INSERT INTO top_songs VALUES(3, "Die Young", "Roddy Ricch", 2018, "Rap");
+INSERT INTO top_songs VALUES(4, "Put it On Me", "YoungBoy", 2022, "Rap");
+INSERT INTO top_songs VALUES(5, "MotorSport", "Migos", 2017, "Rap");
+INSERT INTO top_songs VALUES(6, "Calling My Spirit", "Kodak Black", 2018, "Rap");
+INSERT INTO top_songs VALUES(7, "Pass the Water", "Lil Durk", 2020, "Rap");
+INSERT INTO top_songs VALUES(8,"Hats Off", "Lil Baby", 2021, "Rap");
+INSERT INTO top_songs VALUES(9, "Dior", "Money Bagg Yo", 2021, "Rap");
+INSERT INTO top_songs VALUES(10, "Karma", "Summer Walker", 2018, "R&B");
+INSERT INTO top_songs VALUES(11, "Weekend", "Mac Miller", 2015, "Hip Hop");
+INSERT INTO top_songs VALUES(12, "Hey Whiskey", "Tim McGraw", 2023, "Country");
+INSERT INTO top_songs VALUES(13, "Lesson Learned", "Kidd G", 2023, "Country");
+INSERT INTO top_songs VALUES(14, "Bad Man", "Twinnie", 2023, "Country");
+INSERT INTO top_songs VALUES(15, "Golden Days", "CB30", 2023, "Country");
+SELECT * FROM top_songs WHERE year <= 2021 ORDER by year DESC;
+SELECT SUM(year) FROM top_songs;
